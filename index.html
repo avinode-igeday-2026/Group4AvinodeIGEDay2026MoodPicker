@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Emoji Picker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main class="app">
+  <header class="top-area">
+    <div>
+      <h1>Mood Check-In</h1>
+      <p>Click an emoji to log how you feel.</p>
+    </div>
+
+    <p id="totalText">Total clicks: 0</p>
+  </header>
+
+  <section class="mood-section">
+    <h2 class="hidden-title">Mood Buttons</h2>
+
+    <div class="button-grid">
+
+      <button class="mood-button" type="button" data-key="sad" aria-label="Sad mood">
+        <span class="emoji">😞</span>
+        <span class="mood-name">Sad</span>
+        <span class="count-box" data-count>0</span>
+      </button>
+
+      <button class="mood-button" type="button" data-key="okay" aria-label="Okay mood">
+        <span class="emoji">😐</span>
+        <span class="mood-name">Okay</span>
+        <span class="count-box" data-count>0</span>
+      </button>
+
+      <button class="mood-button" type="button" data-key="good" aria-label="Good mood">
+        <span class="emoji">😄</span>
+        <span class="mood-name">Good</span>
+        <span class="count-box" data-count>0</span>
+      </button>
+
+      <button class="mood-button" type="button" data-key="great" aria-label="Great mood">
+        <span class="emoji">🤩</span>
+        <span class="mood-name">Great</span>
+        <span class="count-box" data-count>0</span>
+      </button>
+
+      <button class="mood-button" type="button" data-key="partyy" aria-label="Party mood">
+        <span class="emoji">🥳</span>
+        <span class="mood-name">Party</span>
+        <span class="count-box" data-count>0</span>
+      </button>
+
+    </div>
+  </section>
+
+  <footer class="bottom-area">
+    <button class="reset-button" id="resetButton" type="button">Reset counts</button>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
