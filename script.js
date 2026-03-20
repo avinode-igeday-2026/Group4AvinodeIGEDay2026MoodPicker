@@ -5,7 +5,10 @@ const totalText = document.getElementById("totalText");
 const resetButton = document.getElementById("resetButton");
 
 let counts = {
+    angry: 0,
+    annoyedirritated: 0,
     sad: 0,
+    tired: 0,
     okay: 0,
     good: 0,
     great: 0,
@@ -118,7 +121,10 @@ for (let i = 0; i < buttons.length; i++) {
 
 // Reset button
 resetButton.addEventListener("click", function () {
+    counts.angry = 0;
+    counts.annoyedirritated = 0;
     counts.sad = 0;
+    counts.tired = 0;
     counts.okay = 0;
     counts.good = 0;
     counts.great = 0;
