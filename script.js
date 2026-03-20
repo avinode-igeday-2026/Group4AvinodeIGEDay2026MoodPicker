@@ -3,6 +3,17 @@ const STORAGE_KEY = "mood_counts";
 const buttons = document.querySelectorAll(".mood-button");
 const totalText = document.getElementById("totalText");
 const resetButton = document.getElementById("resetButton");
+const openBtn = document.getElementById("openModal");
+const closeBtn = document.getElementById("closeModal");
+const modal = document.getElementById("modal");
+
+openBtn.addEventListener("click", () => {
+    modal.classList.add("open");
+});
+
+closeBtn.addEventListener("click", () => {
+    modal.classList.remove("open");
+});
 
 let counts = {
     angry: 0,

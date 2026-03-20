@@ -101,6 +101,71 @@ body {
 
     transition: transform 160ms ease, border-color 160ms ease;
 }
+.padding{
+    padding: 12px;
+}
+
+.mood-button-add {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: linear-gradient(180deg, var(--card-color-light), rgba(255, 255, 255, 0.06));
+    border-radius: 18px;
+    padding: 14px 12px 12px;
+    min-height: 118px;
+
+    display: grid;
+    place-items: center;
+    gap: 10px;
+
+    color: var(--text-color);
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    overflow: hidden;
+
+    transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.modal {
+    background-color: rgba (0, 0, 0, 0.3);
+    opacity: 0;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.modal.open {
+    opacity: 1;
+    z-index: 999;
+}
+
+.modal-inner {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    text-align: center;
+    width: 380px;
+}
+
+.modal-inner h2 {
+    margin: 0;
+}
+
+.modal-inner p {
+    line-height: 24px;
+    margin: 10px 0;
+}
+
+
 
 .mood-button:hover {
     transform: translateY(-2px);
